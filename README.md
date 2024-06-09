@@ -60,3 +60,6 @@ CREATE TABLE OrderDetails (
     FOREIGN KEY (order_id) REFERENCES Orders(id),
     FOREIGN KEY (product_id) REFERENCES Products(id)
 );
+
+![img](https://github.com/VictoriaPashkouskaya/VictoriaPashkouskaya/blob/main/Captura%20de%20pantalla%202024-06-09%20114955.png)
+
