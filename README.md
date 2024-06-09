@@ -52,14 +52,6 @@ CREATE TABLE Orders (
     FOREIGN KEY (user_id) REFERENCES Users(id)
 );
 
-CREATE TABLE OrderDetails (
-    order_id INT,
-    product_id INT,
-    quantity INT NOT NULL,
-    PRIMARY KEY (order_id, product_id),
-    FOREIGN KEY (order_id) REFERENCES Orders(id),
-    FOREIGN KEY (product_id) REFERENCES Products(id)
-);
 
 
 
