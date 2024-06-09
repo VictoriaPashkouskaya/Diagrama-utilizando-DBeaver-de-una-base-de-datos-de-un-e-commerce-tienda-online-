@@ -72,7 +72,6 @@ SELECT * FROM Users;
 
 Seleccionar todos los productos y sus categorías:
 ```sql
-Copiar código
 SELECT Products.id, Products.name, Categories.name AS category
 FROM Products
 JOIN Categories ON Products.category_id = Categories.id;
