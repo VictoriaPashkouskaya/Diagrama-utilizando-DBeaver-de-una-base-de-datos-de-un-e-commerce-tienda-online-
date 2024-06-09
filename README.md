@@ -148,7 +148,7 @@ INNER JOIN Categories c ON p.CategoryID = c.CategoryID;
 ````
 Seleccionar Usuarios con sus Pedidos: (Continúa con el mismo formato para las consultas restantes)
 
-##Ejecución de Consultas
+## Ejecución de Consultas
 Para ejecutar las consultas SQL, sigue estos pasos:
 
 Copia cada consulta en tu cliente de MySQL o herramienta de gestión de bases de datos.
@@ -156,8 +156,8 @@ Ejecuta las consultas una por una en el orden especificado.
 ¡Listo! Ahora tendrás una base de datos de E-Commerce poblada con datos y podrás realizar consultas para obtener información relevante.
 
 
-##Autor
+## Autor
 Este proyecto fue realizado por [Viktoriya Pashkouskaya].
-##Licencia
-##Este proyecto está licenciado bajo la Licencia MIT.
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT.
 
