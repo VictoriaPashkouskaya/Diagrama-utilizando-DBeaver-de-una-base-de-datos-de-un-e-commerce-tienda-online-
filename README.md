@@ -21,7 +21,7 @@ Este proyecto contiene las instrucciones para crear y visualizar una base de dat
 ## Creación de las Tablas
 
 Ejecuta las siguientes consultas SQL en DBeaver para crear las tablas necesarias para el e-commerce.
-
+***  ![img](https://github.com/VictoriaPashkouskaya/VictoriaPashkouskaya/blob/main/Captura%20de%20pantalla%202024-06-09%20114955.png) 
 ```sql
 CREATE TABLE Users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -61,5 +61,5 @@ CREATE TABLE OrderDetails (
     FOREIGN KEY (product_id) REFERENCES Products(id)
 );
 
-*** ![img](https://github.com/VictoriaPashkouskaya/VictoriaPashkouskaya/blob/main/Captura%20de%20pantalla%202024-06-09%20114955.png)
+
 
