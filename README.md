@@ -56,3 +56,20 @@ CREATE TABLE OrderDetails (
     FOREIGN KEY (order_id) REFERENCES Orders(id),
     FOREIGN KEY (product_id) REFERENCES Products(id)
 );
+Creación del Diagrama en DBeaver
+Abrir el Editor de Diagrama:
+
+Haz clic derecho en la base de datos donde creaste las tablas y selecciona ER Diagram.
+Añadir las Tablas al Diagrama:
+
+En el editor de diagramas, haz clic derecho y selecciona Add Table.
+Selecciona las tablas Users, Products, Orders, Categories y OrderDetails para añadirlas al diagrama.
+Visualizar las Relaciones:
+
+DBeaver debería automáticamente detectar y mostrar las relaciones entre las tablas basadas en las claves foráneas que has definido en las consultas SQL.
+Consultas SQL
+Ejecuta las siguientes consultas SQL para interactuar con tu base de datos de e-commerce:
+
+Seleccionar todos los usuarios:
+
+SELECT * FROM Users;
