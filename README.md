@@ -94,8 +94,68 @@ JOIN Users ON Orders.user_id = Users.id
 JOIN Products ON OrderDetails.product_id = Products.id
 WHERE Orders.id = 1;
 ````
+### 2.2.1 INSERTAR DATOS
 
+1. **Inserción de Usuarios:**
+```sql
+-- Inserta al menos 5 nuevos usuarios
+INSERT INTO Users (UserName, Email, Password) VALUES
+('usuario1', 'usuario1@example.com', 'contraseña1'),
+('usuario2', 'usuario2@example.com', 'contraseña2'),
+('usuario3', 'usuario3@example.com', 'contraseña3'),
+('usuario4', 'usuario4@example.com', 'contraseña4'),
+('usuario5', 'usuario5@example.com', 'contraseña5');
+````
+![img](g) 
+-- Inserta al menos 5 nuevos productos
+```sql
+INSERT INTO Products (ProductName, Price, Stock, CategoryID) VALUES
+('Producto1', 25.00, 50, 1),
+('Producto2', 35.00, 30, 2),
+('Producto3', 40.00, 20, 1),
+('Producto4', 15.00, 100, 3),
+('Producto5', 50.00, 10, 2);
+````
+![img](g) 
+ ACTUALIZAR DATOS
+Cambiar Nombre de Producto:
+````sql
+-- Cambia el nombre de un producto por su ID
+UPDATE Products SET ProductName = 'NuevoNombre' WHERE ProductID = 1;
+````
+Cambiar Precio de Producto:
+````sql
+-- Cambia el precio de un producto por su ID
+UPDATE Products SET Price = 50.00 WHERE ProductID = 2;
+````
+ OBTENER DATOS
+Seleccionar Productos con Precio Superior a 20€:
+````sql
+-- Selecciona todos los productos con precio superior a 20€
+SELECT * FROM Products WHERE Price > 20.00;
+````
+Mostrar Productos en Orden Descendente de Precio:
+````sql
+-- Muestra todos los productos ordenados en forma descendente por precio
+SELECT * FROM Products ORDER BY Price DESC;
+````
+Seleccionar Productos con Categoría:
+````sql
+-- Selecciona todos los productos con su respectiva categoría
+SELECT p.*, c.CategoryName 
+FROM Products p
+INNER JOIN Categories c ON p.CategoryID = c.CategoryID;
+````
+Seleccionar Usuarios con sus Pedidos: (Continúa con el mismo formato para las consultas restantes)
 
+Ejecución de Consultas
+Para ejecutar las consultas SQL, sigue estos pasos:
+
+Copia cada consulta en tu cliente de MySQL o herramienta de gestión de bases de datos.
+Ejecuta las consultas una por una en el orden especificado.
+¡Listo! Ahora tendrás una base de datos de E-Commerce poblada con datos y podrás realizar consultas para obtener información relevante.
+Autor
+Este proyecto fue realizado por [Viktoriya Pashkouskaya].
 Licencia
 Este proyecto está licenciado bajo la Licencia MIT.
 
