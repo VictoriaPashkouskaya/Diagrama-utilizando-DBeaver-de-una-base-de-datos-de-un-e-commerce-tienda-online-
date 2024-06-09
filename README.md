@@ -106,7 +106,7 @@ INSERT INTO Users (UserName, Email, Password) VALUES
 ('usuario4', 'usuario4@example.com', 'contraseña4'),
 ('usuario5', 'usuario5@example.com', 'contraseña5');
 ````
-![img](g) 
+![img](https://github.com/VictoriaPashkouskaya/VictoriaPashkouskaya/blob/main/Captura%20de%20pantalla%202024-06-09%20123505.png) 
 -- Inserta al menos 5 nuevos productos
 ```sql
 INSERT INTO Products (ProductName, Price, Stock, CategoryID) VALUES
@@ -116,7 +116,7 @@ INSERT INTO Products (ProductName, Price, Stock, CategoryID) VALUES
 ('Producto4', 15.00, 100, 3),
 ('Producto5', 50.00, 10, 2);
 ````
-![img](g) 
+![img](https://github.com/VictoriaPashkouskaya/VictoriaPashkouskaya/blob/main/Captura%20de%20pantalla%202024-06-09%20123742.png) 
  ACTUALIZAR DATOS
 Cambiar Nombre de Producto:
 ````sql
