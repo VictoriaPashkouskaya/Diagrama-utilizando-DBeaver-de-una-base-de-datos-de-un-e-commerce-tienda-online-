@@ -56,7 +56,9 @@ CREATE TABLE OrderDetails (
     FOREIGN KEY (order_id) REFERENCES Orders(id),
     FOREIGN KEY (product_id) REFERENCES Products(id)
 );
-Creación del Diagrama en DBeaver
+
+
+##Creación del Diagrama en DBeaver
 Abrir el Editor de Diagrama:
 
 Haz clic derecho en la base de datos donde creaste las tablas y selecciona ER Diagram.
